@@ -53,10 +53,8 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        include: [         
-         path.resolve(__dirname, 'projects')
-        ],
-        use:  [
+        include: [path.resolve(__dirname, 'projects')],
+        use: [
           { loader: './scripts/html-inject-loader.js' },
           {
             loader: 'raw-loader',
